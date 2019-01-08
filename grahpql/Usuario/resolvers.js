@@ -1,4 +1,4 @@
-import models from '../../models';
+
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 const secreto = 's3cret@2019';

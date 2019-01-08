@@ -2,11 +2,7 @@ import models from '../../models';
 const resolvers = {
 	Query: {
 		posts: (parent, args, { db }, info) => {
-			const offset = args.offset || 0;
-			const limit = args.first || 10;
-			delete args.offset;
-			delete args.first;
-			return db.post.findAll({ where: args, include: [models.author], offset, limit })
+			return db.post.findAll({ where: args, include: [models.author] })
 		},
 		post: (parent, { id }, { db }, info) => db.post.find({ where: {id: id}, include: [models.author] })
 	},
