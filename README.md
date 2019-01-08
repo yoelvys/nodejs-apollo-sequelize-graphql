@@ -1,4 +1,4 @@
-# nodejs-apollo-sequelize-graphql
+# nodejs-apollo-sequelize-graphql (Registro y Login con sequelize)
 Proyecto inicial con registro y login, tiene estructurado los resolvers y schema en archivos separados por entidades.
 
 ### Para poner en funcionamiento el proyecto deben seguir los siguientes pasos:
