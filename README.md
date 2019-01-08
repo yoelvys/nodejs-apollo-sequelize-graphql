@@ -6,6 +6,13 @@ Proyecto inicial con registro y login, tiene estructurado los resolvers y schema
 git clone https://github.com/yoelvys/nodejs-apollo-sequelize-graphql.git
 npm install
 ```
+### Error instalacion de los paquetes en WINDOWS
+En windows muchas veces da un error el install y se debe a que la intalacion de bcrypt falla, la solucion es la instalacion de paquetes adicionales
+```
+Instalar como administrador en el cmd de windows, el primer comando termina instalando python 2.7 y toca cerrarlo manualmente
+npm install --global --production windows-build-tools
+npm install node-gyp -g
+```
 Configurar el archivo config/config.json con los datos para el acceso a la bd
 ```
 {
